@@ -22,4 +22,4 @@ let j = 11;
 do {
   if (j % 2 !== 0) console.log(j);
   j++;
-} while (j <= 11);
+} while (j <= 20);

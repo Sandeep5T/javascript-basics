@@ -6,10 +6,11 @@ function checkSpeed(speed) {
     console.log("Ok");
     return;
   }
+
   const points = Math.floor((speed - speedLimit) / kmPerPoint);
   if (points >= 12) {
     console.log("License suspended");
-    kmPerPoint++; //no code executes and throws type error:Reassignment to constant variable
+    kmPerPoint++; //code executes till here and throws 'Uncaught type error:Reassignment to constant variable'
   } else {
     console.log("Points", points);
   }
